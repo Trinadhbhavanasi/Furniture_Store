@@ -1,0 +1,131 @@
+/* Cart Page Styles */
+.cart-page {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #FAEBD7, #F5DEB3);
+
+  }
+  
+  .cart-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cart-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .cart-item-details {
+    flex-grow: 1;
+    margin-left: 15px;
+  }
+  
+  .cart-item-details h3 {
+    font-size: 1.2rem;
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .cart-item-details p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .cart-item-actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .cart-item-actions button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #f04d3f;
+    color: #fff;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cart-item-actions button:hover {
+    background-color: #e04334;
+  }
+  
+  .cart-item-actions .quantity {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0 10px;
+  }
+  
+  .cart-summary {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cart-summary h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .cart-summary .summary-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .cart-summary .summary-item span {
+    font-weight: bold;
+  }
+  
+  .cart-summary .total-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #f04d3f;
+    margin-top: 20px;
+  }
+  
+  .checkout-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .checkout-btn:hover {
+    background-color: #45a049;
+  }
+  

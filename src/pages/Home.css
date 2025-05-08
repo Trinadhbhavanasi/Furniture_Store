@@ -1,0 +1,58 @@
+.home {
+    font-family: sans-serif;
+    background: linear-gradient(to bottom, #FAEBD7, #F5DEB3);
+  }
+  
+  .banner {
+    background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c'); /* Sample furniture banner */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+  }
+  
+  .banner h1 {
+    font-size: 3rem;
+    background-color: rgba(0,0,0,0.5);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;
+  }
+  
+  .welcome {
+    text-align: center;
+    margin: 40px 20px;
+  }
+  
+  .categories {
+    padding: 5px;
+    text-align: center;
+  }
+  
+  .category-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 190px;
+    margin-top: 60px;
+  }
+  
+  .category-card {
+    background-color: #f9f9f9;
+    padding: 10px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+  
+  .category-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .category-image img {
+    width: 100%;
+    border-radius: 6px;
+  }
+  

@@ -1,0 +1,33 @@
+.checkout-items {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.checkout-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, #FAEBD7, #F5DEB3);
+}
+
+.checkout-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.checkout-item h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.checkout-item p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #555;
+}

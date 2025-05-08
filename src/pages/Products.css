@@ -1,0 +1,185 @@
+/* === Page Background === */
+.products-page {
+  background: linear-gradient(to bottom, #FAEBD7, #F5DEB3);
+  padding: 20px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* === Responsive Product Grid Layout === */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* === Individual Product Cards === */
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  height: 100%;
+}
+
+.product-card:hover {
+  transform: scale(1.04);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* === Product Image === */
+.product-card img {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+/* === Product Title === */
+.product-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 10px 0;
+  color: #333;
+}
+
+/* === Product Description === */
+.product-card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* === Product Price === */
+.product-card .price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+/* === Action Buttons === */
+.product-card button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin-top: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+}
+
+.product-card button:hover {
+  background-color: #0056b3;
+}
+
+/* === Modal === */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 10000;
+}
+
+/* === Modal Content === */
+.modal-content {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* === Modal Image === */
+.modal-content img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* === Modal Title & Text === */
+.modal-content h2 {
+  margin-bottom: 12px;
+  font-size: 22px;
+  color: #333;
+}
+
+.modal-content p {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.modal-content .price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+/* === Close Button === */
+.close-button {
+  margin-top: 10px;
+  background-color: #ddd;
+  border: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.close-button:hover {
+  background-color: #bbb;
+}
+
+/* === Fade-in Animation === */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* === Responsive Text === */
+@media (max-width: 500px) {
+  .product-card h3 {
+    font-size: 15px;
+  }
+
+  .product-card p,
+  .product-card .price {
+    font-size: 13px;
+  }
+
+  .product-card button {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+}
